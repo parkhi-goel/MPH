@@ -9,13 +9,13 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
+  background: #2a2d35;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container{
-  width: 85%;
+  width: 80%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
@@ -112,7 +112,7 @@ body{
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #5029bc;
+  background: #635881;
 }
 
 @media (max-width: 950px) {
@@ -148,60 +148,37 @@ body{
    margin-left: 0;
  }
 }
-
-/* NAV bar on contact us */
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background02.png);
-    background-size: cover;
-    background-position: center;
-}
-.container1{
-    padding: 10px 10%;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-nav ul li a::after{ 
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: red;
+  .button {
+    margin: 0;
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    top: 65%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .button1 {
+    margin: 0;
+    position: absolute;
+    top: 75%  ;
+    left: 80%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
-}
-nav ul li a:hover::after{
-    width:  100%;
-}
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: red;
-}
-.header-text h5 span{
-    color: red;
-}
+  }
+  .right-side .button1{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button1 input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button1 input[type="button"]:hover{
+    background: #635881;
+  }
